@@ -1,0 +1,9 @@
+[project]
+name = "empiriolabs"
+version = "0.0.1"
+description = "EmpirioLabs AI OpenAI-compatible model provider plugin for Dify"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dify_plugin>=0.9.0",
+]

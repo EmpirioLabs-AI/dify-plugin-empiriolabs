@@ -1,0 +1,93 @@
+provider: empirio_labs
+label:
+  en_US: EmpirioLabs AI
+description:
+  en_US: EmpirioLabs AI provides OpenAI-compatible access to text, image, video, audio, search, and 3D models.
+icon_small:
+  en_US: icon.svg
+icon_large:
+  en_US: icon.svg
+background: "#101828"
+help:
+  title:
+    en_US: Get your API key from EmpirioLabs AI
+  url:
+    en_US: https://empiriolabs.ai/
+supported_model_types:
+  - llm
+configurate_methods:
+  - predefined-model
+  - customizable-model
+provider_credential_schema:
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        en_US: Enter your EmpirioLabs API key
+model_credential_schema:
+  model:
+    label:
+      en_US: Model Name
+    placeholder:
+      en_US: Enter a model name, for example qwen3-7-max
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        en_US: Enter your EmpirioLabs API key
+    - variable: context_size
+      label:
+        en_US: Model context size
+      type: text-input
+      required: true
+      default: "128000"
+      placeholder:
+        en_US: Enter the context size
+    - variable: max_tokens
+      label:
+        en_US: Upper bound for max tokens
+      type: text-input
+      required: false
+      default: "8192"
+    - variable: function_calling_type
+      label:
+        en_US: Function calling
+      type: select
+      required: false
+      default: no_call
+      options:
+        - value: no_call
+          label:
+            en_US: Not Support
+        - value: tool_call
+          label:
+            en_US: Support
+    - variable: vision_support
+      label:
+        en_US: Vision Support
+      type: select
+      required: false
+      default: no_support
+      options:
+        - value: support
+          label:
+            en_US: "Yes"
+        - value: no_support
+          label:
+            en_US: "No"
+models:
+  llm:
+    predefined:
+      - models/llm/*.yaml
+    position: models/llm/_position.yaml
+extra:
+  python:
+    provider_source: provider/empirio_labs.py
+    model_sources:
+      - models/llm/llm.py
