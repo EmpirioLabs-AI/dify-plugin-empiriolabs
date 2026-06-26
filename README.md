@@ -28,6 +28,6 @@ For the full current catalog, see [EmpirioLabs models](https://empiriolabs.ai/mo
 
 ## Source and support
 
-- Plugin source: https://github.com/Adam-Dalloul/dify-plugin-empiriolabs
+- Plugin source: https://github.com/EmpirioLabs-ai/dify-plugin-empiriolabs
 - API documentation: https://docs.empiriolabs.ai/
 - Product site: https://empiriolabs.ai/

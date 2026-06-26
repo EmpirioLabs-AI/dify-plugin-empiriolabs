@@ -1,10 +1,10 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: empiriolabs
 name: empiriolabs
 label:
   en_US: EmpirioLabs AI
-created_at: "2026-06-25T21:45:00Z"
+created_at: "2026-06-26T03:30:00Z"
 icon: icon.svg
 privacy: PRIVACY.md
 resource:
@@ -17,7 +17,7 @@ plugins:
   models:
     - provider/empirio_labs.yaml
 meta:
-  version: 0.0.1
+  version: 0.0.2
   arch:
     - amd64
     - arm64
