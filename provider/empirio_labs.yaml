@@ -2,11 +2,11 @@ provider: empirio_labs
 label:
   en_US: EmpirioLabs AI
 description:
-  en_US: EmpirioLabs AI provides OpenAI-compatible access to text, image, video, audio, search, and 3D models.
+  en_US: EmpirioLabs AI is a specialized AI inference and integration provider with text, image, video and audio models, GPU Cloud and hosted agents.
 icon_small:
-  en_US: icon.svg
+  en_US: icon.png
 icon_large:
-  en_US: icon.svg
+  en_US: icon.png
 background: "#101828"
 help:
   title:
@@ -26,7 +26,7 @@ provider_credential_schema:
       type: secret-input
       required: true
       placeholder:
-        en_US: Enter your EmpirioLabs API key
+        en_US: Enter your EmpirioLabs AI API key
 model_credential_schema:
   model:
     label:
@@ -40,7 +40,7 @@ model_credential_schema:
       type: secret-input
       required: true
       placeholder:
-        en_US: Enter your EmpirioLabs API key
+        en_US: Enter your EmpirioLabs AI API key
     - variable: context_size
       label:
         en_US: Model context size
