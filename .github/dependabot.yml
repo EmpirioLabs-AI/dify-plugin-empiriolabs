@@ -1,10 +1,6 @@
 version: 2
 updates:
-  # Version updates wait until a release is a week old: a poisoned release is
-  # usually found and pulled within hours. Security updates are not delayed.
   - package-ecosystem: pip
     directory: /
     schedule:
       interval: weekly
-    cooldown:
-      default-days: 7
